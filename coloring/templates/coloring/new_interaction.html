@@ -122,5 +122,35 @@
 <body>
 		<canvas id="myCanvas" width="750px" height="750px"></canvas>
 		<div id="color-palette"></div>
+		<!-- <input type="button" id="export-button" value="Save SVG"> -->
+		<a id="download" download="image.png"><button type="button" onClick="download()">Download</button></a>
+		<script type="text/javascript">
+			// http://paperjs.org/features/#svg-import-and-export
+			// function downloadDataUri(options) {
+			// 	if (!options.url)
+			// 		options.url = "http://download-data-uri.appspot.com/";
+			// 		$('<form method="post" action="' + options.url
+			// 		+ '" style="display:none"><input type="hidden" name="filename" value="'
+			// 		+ options.filename + '"/><input type="hidden" name="data" value="'
+			// 		+ options.data + '"/></form>').appendTo('body').submit().remove();
+			// 	}
+			//
+			// $('#export-button').click(function() {
+			// 	var svg = project.exportSVG({ asString: true });
+			// 	downloadDataUri({
+			// 		data: 'data:image/svg+xml;base64,' + btoa(svg),
+			// 		filename: 'export.svg'
+			// 	});
+			// });
+
+			// https://stackoverflow.com/questions/11112321/how-to-save-canvas-as-png-image
+			function download(){
+        var download = document.getElementById("download");
+        var image = document.getElementById("myCanvas").toDataURL("image/png")
+                    .replace("image/png", "image/octet-stream");
+        download.setAttribute("href", image);
+
+    	}
+		</script>
 </body>
 </html>
