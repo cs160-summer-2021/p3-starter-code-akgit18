@@ -21,19 +21,15 @@
       height: 118px;
     }
 
-    .h-img {
-      height: 150px;
-    }
-
     #b1-1, #b1-2, #b1-3 {
       padding-top: 16px;
-      background: #c4c4c4;
+      background: #e5e5e5;
       text-align:center
     }
 
     #b2-1, #b3-1, #b4-1, #b2-2, #b3-2, #b4-2{
       padding-top: 16px;
-      background: #c4c4c4;
+      background: #e5e5e5;
       font-size:12px;
       text-align:center;
     }
@@ -46,19 +42,25 @@
   <div class="container-fluid" style="width:320px">
     <div class = "row">
       <div id = "b1-1" class="h-top" style="width:80%;font-size:20px; padding-top:8px;">  </div>
-      <a href="http://localhost:8000/coloring/settings/" style="width:20%;font-size:30px;color:black;">
+      <a href="{% url 'settings' %}" style="width:20%;font-size:30px;color:black;">
         <div id = "b1-2" class="h-top"> ⚙️ </div>
       </a>
     </div>
 
     <div class = "row">
-      <div id = "b2-1" class="w-50 h-img p-3"> img </div>
-      <div id = "b2-2" class="w-50 h-img p-3"> img </div>
+      <div id = "b2-1" class="w-50 h-img p-3">
+        <img src="{% static 'coloring/images/triangles.svg' %}"/>
+      </div>
+      <div id = "b2-2" class="w-50 h-img p-3">
+        <img src="{% static 'coloring/images/mandala-freepik.svg' %}"/>
+      </div>
 
     </div>
 
     <div class = "row">
-      <div id = "b3-1" class="w-50 h-img"> img </div>
+      <div id = "b3-1" class="w-50 h-img">
+        <img src="{% static 'coloring/images/mandala-freepik-simple.svg' %}"/>
+      </div>
       <div id = "b3-2" class="w-50 h-img"> img </div>
     </div>
 
@@ -69,7 +71,5 @@
     </div>
   </div>
 </body>
-
-<script>
 
 </html>
