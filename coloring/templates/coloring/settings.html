@@ -16,38 +16,47 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style type="text/css">
+    /* iPhone SE ~ 320*568 */
     .h-6{
-      height: 12vh;
+      height: 95px;
     }
 
     #b1-1, #b1-2, #b1-3 {
-      padding-top: 2vh;
+      padding-top: 16px;
       background: #c4c4c4;
+      text-align:center
     }
 
     #b2, #b3, #b4, #b5, #b6 {
-      padding-top: 2vh;
-      padding-left: 1vw;
+      padding-top: 16px;
+      padding-left: 10px;
       background: #c4c4c4;
-      font-size:14px
+      font-size:14px;
     }
+
   </style>
 </head>
 
 <body>
   <br><br><br><br>
-  <div class="container-fluid" style="width:25%">
+  <div class="container-fluid" style="width:320px">
     <div class = "row">
-      <a href="http://localhost:8000/coloring/homepage/" style="width:33.3%;font-size:45px; text-align:center;color:black;">
+      <a href="http://localhost:8000/coloring/homepage/" style="width:33.3%;font-size:45px;color:black;">
         <div id = "b1-1" class="h-6"> ⌫ </div>
       </a>
 
-      <div id = "b1-2" class="h-6" style="width:33.3%;font-size:60px; text-align:center;padding-top:1vh;"> ⚙️ </div>
-      <div id = "b1-3" class="h-6" style="width:33.4%;font-size:45px; text-align:center;"> ❔ </div>
+      <div id = "b1-2" class="h-6" style="width:33.3%;font-size:60px; padding-top:1vh;"> ⚙️ </div>
+      <div id = "b1-3" class="h-6" style="width:33.4%;font-size:45px;"> ❔ </div>
     </div>
 
     <div class = "row">
-      <div id = "b2" class="w-100 h-6"> Enable Blind Mode </div>
+      <div id = "b2" class="w-50 h-6 p-3"> Enable Blind Mode </div>
+      <div class="w-50 h-6 p-3" style="background: #c4c4c4;text-align:right;padding-right:10px">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
+      </div>
     </div>
 
     <div class = "row">
@@ -55,15 +64,33 @@
     </div>
 
     <div class = "row">
-      <div id = "b4" class="w-100 h-6"> NoiseConcellation </div>
+      <div id = "b4" class="w-50 h-6"> NoiseConcellation </div>
+      <div class="w-50 h-6 p-3" style="background: #c4c4c4;text-align:right;padding-right:10px">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
+      </div>
     </div>
 
     <div class = "row">
-      <div id = "b5" class="w-100 h-6"> Dictation </div>
+      <div id = "b5" class="w-50 h-6"> Dictation </div>
+      <div class="w-50 h-6 p-3" style="background: #c4c4c4;text-align:right;padding-right:10px">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
+      </div>
     </div>
 
     <div class = "row">
-      <div id = "b6" class="w-100 h-6"> Show Alerts </div>
+      <div id = "b6" class="w-50 h-6"> Show Alerts </div>
+      <div class="w-50 h-6 p-3" style="background: #c4c4c4;text-align:right;padding-right:10px">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked>
+          <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
+      </div>
     </div>
   </div>
 </body>
