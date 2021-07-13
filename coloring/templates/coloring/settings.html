@@ -17,7 +17,7 @@
 
   <style type="text/css">
     /* iPhone SE ~ 320*568 */
-    .h-6{
+    .h-6 {
       height: 95px;
     }
 
@@ -32,6 +32,12 @@
       padding-left: 10px;
       background: #e5e5e5;
       font-size:14px;
+    }
+
+    #b3-1, #b3-2 {
+      padding-left: 10px;
+      background: #e5e5e5;
+      font-size:10px;
     }
 
     /* https://www.w3schools.com/howto/howto_css_switch.asp */
@@ -117,8 +123,8 @@
     </div>
 
     <div class = "row">
-      <div id = "b2" class="w-50 h-6 p-3"> Enable Blind Mode </div>
-      <div class="w-50 h-6 p-3" style="background: #e5e5e5;text-align:right;padding-right:10px">
+      <div id = "b2" class="w-50 p-3" style="height:55px;"> Enable Blind Mode </div>
+      <div class="w-50 p-3" style="height:55px;background: #e5e5e5;text-align:right;padding-right:10px">
         <div class="form-check form-switch">
           <!-- https://www.w3schools.com/howto/howto_css_switch.asp -->
           <label class="switch">
@@ -130,7 +136,17 @@
     </div>
 
     <div class = "row">
-      <div id = "b3" class="w-100 h-6"> Default Brush Settings </div>
+      <div id = "b3" class="w-100 p-3" style="height:10px;"> Default Brush </div>
+      <div id = "b3" class="w-100 p-3" style="height:125px;">
+        <div class="input-group mb-2 mt-3 ml-2" style="width:150px;height:20px;font-size:25px;">
+          ⚫️
+    	  	<input type="text" class="form-control"  placeholder="000000">
+        </div>
+      </div>
+
+
+
+
     </div>
 
     <div class = "row">
@@ -138,7 +154,7 @@
       <div class="w-50 h-6 p-3" style="background: #e5e5e5;text-align:right;padding-right:10px">
         <div class="form-check form-switch">
           <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" checked>
             <span class="slider round"></span>
           </label>
         </div>
@@ -150,7 +166,7 @@
       <div class="w-50 h-6 p-3" style="background: #e5e5e5;text-align:right;padding-right:10px">
         <div class="form-check form-switch">
           <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" checked>
             <span class="slider round"></span>
           </label>
         </div>
@@ -162,7 +178,7 @@
       <div class="w-50 h-6 p-3" style="background: #e5e5e5;text-align:right;padding-right:10px">
         <div class="form-check form-switch">
           <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" checked>
             <span class="slider round"></span>
           </label>
         </div>
