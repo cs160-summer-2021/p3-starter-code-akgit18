@@ -41,25 +41,40 @@
   <br><br><br><br>
   <div class="container-fluid" style="width:320px">
     <div class = "row">
-      <div id = "b1-1" class="h-top" style="width:80%;font-size:20px; padding-top:8px;">  </div>
+      <div id = "b1-1" class="h-top" style="width:80%;font-size:20px; padding-top:8px;">
+        <!-- code in below div partially from from https://getbootstrap.com/docs/4.1/components/input-group/ -->
+    		<div class="input-group mb-2 mt-3 ml-2">
+    	  	<input type="text" class="form-control" placeholder="Search...">
+    	  	<div class="input-group-append">
+    	    	<button class="btn btn-outline-primary" type="button" id="button-addon2">Go</button>
+    	  	</div>
+    		</div>
+      </div>
       <a href="{% url 'settings' %}" style="width:20%;font-size:30px;color:black;">
         <div id = "b1-2" class="h-top"> ⚙️ </div>
       </a>
     </div>
 
     <div class = "row">
-      <div id = "b2-1" class="w-50 h-img p-3">
-        <img src="{% static 'coloring/images/triangles.svg' %}"/>
-      </div>
+
+        <div id = "b2-1" class="w-50 h-img p-3">
+          <a href="{% url 'new_interaction' %}">
+            <img src="{% static 'coloring/images/triangles.svg' %}"/>
+          </a>
+        </div>
       <div id = "b2-2" class="w-50 h-img p-3">
-        <img src="{% static 'coloring/images/mandala-freepik.svg' %}"/>
+        <a href="{% url 'new_interaction' %}">
+          <img src="{% static 'coloring/images/mandala-freepik.svg' %}"/>
+        </a>
       </div>
 
     </div>
 
     <div class = "row">
       <div id = "b3-1" class="w-50 h-img">
-        <img src="{% static 'coloring/images/mandala-freepik-simple.svg' %}"/>
+        <a href="{% url 'new_interaction' %}">
+          <img src="{% static 'coloring/images/mandala-freepik-simple.svg' %}"/>
+        </a>
       </div>
       <div id = "b3-2" class="w-50 h-img"> img </div>
     </div>
