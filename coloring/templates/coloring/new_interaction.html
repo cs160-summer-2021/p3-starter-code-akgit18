@@ -121,11 +121,17 @@
 </head>
 <body>
 	<div class="container" style="width:100%; height:100%">
+		<div class="header" style="width:100%; height:10%">
+
+		</div>
 		<canvas id="myCanvas" style="width:100%; height:80%"></canvas>
 
 		<div id="color-palette"></div>
-		<!-- <input type="button" id="export-button" value="Save SVG"> -->
-		<a id="download" download="image.png"><button type="button" onClick="download()">Download</button></a>
+		<div class="row" style="width:100%; height:10%">
+			<!-- <input type="button" id="export-button" value="Save SVG"> -->
+			<a id="download" download="image.png" class="ml-3"><button type="button" onClick="download()" class="btn btn-success">Save as PNG</button></a>
+		</div>
+
 	</div>
 
 
