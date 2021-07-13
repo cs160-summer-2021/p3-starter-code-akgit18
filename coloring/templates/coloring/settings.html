@@ -7,7 +7,7 @@
   <title>Settings</title>
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{% static '/coloring/vendors/bootstrap/css/bootstrap.css' %}" />
-  <link rel="stylesheet" type="text/css" href="{% static 'coloring/css/main.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static '/coloring/css/main.css' %}" />
 
   <script src="{% static 'coloring/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 
@@ -97,11 +97,15 @@
       border-radius: 50%;
     }
 
+    .container-fluid {
+      animation-name: slideleft;
+      animation-duration: 0.3s;
+    }
   </style>
 </head>
 
 <body>
-  <br><br><br><br>
+
   <div class="container-fluid" style="width:320px">
     <div class = "row">
       <a href="{% url 'homepage' %}" style="width:33.3%;font-size:45px;color:black;">
