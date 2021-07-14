@@ -88,53 +88,50 @@
           </div>
       {% endfor %}
 
-        <!-- <div id = "b2-1" class="w-50 h-img p-3">
-          <a href="{% url 'new_interaction' %}">
-            <img src="{% static 'coloring/images/triangles.svg' %}"/>
-          </a>
-        </div>
-      <div id = "b2-2" class="w-50 h-img p-3">
-        <a href="{% url 'new_interaction' %}">
-          <img src="{% static 'coloring/images/mandala-freepik.svg' %}"/>
-        </a>
-      </div>
+      <!-- clown: https://svgsilh.com/svg/736058.svg -->
+      <!-- butterfly: https://svgsilh.com/svg/1254545.svg -->
+      <!-- flower: https://svgsilh.com/svg/1989654.svg -->
 
+      <!-- <div id = "b2-1" class="w-50 h-img p-3">
+         <a href="{% url 'triangles' %}">
+           <img src="{% static 'coloring/images/triangles.svg' %}"/>
+         </a>
+       </div>
+       <div id = "b2-2" class="w-50 h-img p-3">
+         <a href="{% url 'new_interaction' %}">
+           <img src="{% static 'coloring/images/mandala-freepik.svg' %}"/>
+         </a>
+       </div>
+     </div>
+     <div class = "row">
+       <div id = "b3-1" class="w-50 h-img">
+         <a href="{% url 'simple' %}">
+           <img src="{% static 'coloring/images/mandala-freepik-simple.svg' %}"/>
+         </a>
+       </div>
+       <div id = "b3-2" class="w-50 h-img">
+         <a href="{% url 'clown' %}">
+
+           <img src="{% static 'coloring/images/clown.svg' %}"/>
+         </a>
+       </div>
+     </div>
+     <div class = "row">
+       <div id = "b4-1" class="w-50 h-img">
+         <a href="{% url 'butterfly' %}">
+
+           <img src="{% static 'coloring/images/butterfly.svg' %}"/>
+         </a>
+       </div>
+       <div id = "b4-2" class="w-50 h-img">
+         <a href="{% url 'flower' %}">
+
+           <img src="{% static 'coloring/images/flower.svg' %}"/>
+         </a>
+       </div>
+     </div> -->
     </div>
 
-    <div class = "row">
-
-      <div id = "b3-1" class="w-50 h-img">
-        <a href="{% url 'new_interaction' %}">
-          <img src="{% static 'coloring/images/mandala-freepik-simple.svg' %}"/>
-        </a>
-      </div>
-
-      <div id = "b3-2" class="w-50 h-img">
-        <a href="{% url 'new_interaction' %}">
-          https://svgsilh.com/svg/736058.svg
-          <img src="{% static 'coloring/images/clown.svg' %}"/>
-        </a>
-      </div> -->
-
-    </div>
-
-    <!--<div class = "row">
-
-      <div id = "b4-1" class="w-50 h-img">
-        <a href="{% url 'new_interaction' %}">
-          https://svgsilh.com/svg/1254545.svg
-          <img src="{% static 'coloring/images/butterfly.svg' %}"/>
-        </a>
-      </div>
-
-      <div id = "b4-2" class="w-50 h-img">
-        <a href="{% url 'new_interaction' %}">
-          https://svgsilh.com/svg/1989654.svg
-          <img src="{% static 'coloring/images/flower.svg' %}"/>
-        </a>
-      </div> -->
-
-    </div>
   </div>
   <script type="text/javascript">
     let imgs = $(".imdiv").attr("id", function(i,val) {
