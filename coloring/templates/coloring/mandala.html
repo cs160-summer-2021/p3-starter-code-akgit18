@@ -128,7 +128,7 @@
 			var canvas = document.getElementById('myCanvas');
 
 			// coloring page
-			var mandala = {
+			var pic = {
 				item: null,
 				lastClicked: null,
 				filePath: '/static/coloring/images/mandala-freepik.svg'
@@ -145,7 +145,7 @@
 				var tool = new paper.Tool();
 
 				tool.onMouseDown = function (event) {
-				    var hit = mandala.item.hitTest(event.point, { tolerance: 2, fill: true });
+				    var hit = pic.item.hitTest(event.point, { tolerance: 2, fill: true });
 				    if (hit) {
 				    		// Color pallette keeps track of the full history of colors, though we
 				    		// only color in with the most-recent color.
@@ -197,9 +197,9 @@
 				paper.setup(canvas);
 				getColorsCreatePalette();
 
-				paper.project.importSVG(mandala.filePath, function(item) {
-					mandala.item = item._children["design-freepik"];
-				    paper.project.insertLayer(0,mandala.item);
+				paper.project.importSVG(pic.filePath, function(item) {
+					pic.item = item._children["design-freepik"];
+				    paper.project.insertLayer(0,pic.item);
 						paper.project.layers[0].fitBounds(paper.view.bounds)
 				    if (custom) {
 				    	myCustomInteraction();
