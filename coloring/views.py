@@ -4,6 +4,9 @@ import os
 def demo(request):
     return render(request, 'coloring/demo.html')
 
+def mandala(request):
+    return render(request, 'coloring/mandala.html')
+
 def new_interaction(request):
     return render(request, 'coloring/new_interaction.html')
 
