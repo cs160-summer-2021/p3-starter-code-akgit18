@@ -81,9 +81,9 @@
     <div class = "row">
 
       {% for file in files %}
-          <div class="w-50 h-img p-3 b2 imdiv" id="{% static file %}">
-            <a href="{% url 'new_interaction' %}">
-              <img src="{% static file %}" alt="">
+          <div class="w-50 h-img p-3 b2 imdiv" id="{% static file.1 %}">
+            <a href="{% url 'new_interaction' file.0 %}">
+              <img src="{% static file.1 %}" alt="">
             </a>
           </div>
       {% endfor %}

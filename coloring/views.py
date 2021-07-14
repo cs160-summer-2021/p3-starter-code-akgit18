@@ -7,13 +7,15 @@ def demo(request):
 def mandala(request):
     return render(request, 'coloring/mandala.html')
 
-def new_interaction(request):
-    return render(request, 'coloring/new_interaction.html')
+def new_interaction(request,path='mandala-freepik'):
+    context_dict = {}
+    context_dict['imagePath']= '/static/coloring/images/' + path + '.svg'
+    return render(request, 'coloring/new_interaction.html', context=context_dict)
 
 def homepage(request):
     context_dict = {}
     files = os.listdir(os.path.join("coloring/static/", "coloring/images"))
-    context_dict['files'] = ['coloring/images/'+x for x in  files[0:]]
+    context_dict['files'] = [(x.split('.')[0],'coloring/images/'+x) for x in  files[0:]]
     return render(request, 'coloring/homepage.html', context=context_dict)
 
 def settings(request):
