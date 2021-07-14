@@ -31,7 +31,7 @@
       text-align:center;
     }
 
-    #b2-1, #b3-1, #b4-1, #b2-2, #b3-2, #b4-2{
+    #b2-1, #b3-1, #b4-1, #b2-2, #b3-2, #b4-2, .b2{
       padding:5px;
       background: #f1f1f1;
       /* font-size:16px;  */
@@ -79,8 +79,15 @@
     </div>
 
     <div class = "row">
+      {% for file in files %}
+          <div class="w-50 h-img p-3 b2">
+            <a href="{% url 'new_interaction' %}">
+              <img src="{% static file %}" alt="">
+            </a>
+          </div>
+      {% endfor %}
 
-        <div id = "b2-1" class="w-50 h-img p-3">
+        <!-- <div id = "b2-1" class="w-50 h-img p-3">
           <a href="{% url 'new_interaction' %}">
             <img src="{% static 'coloring/images/triangles.svg' %}"/>
           </a>
@@ -98,7 +105,7 @@
         <a href="{% url 'new_interaction' %}">
           <img src="{% static 'coloring/images/mandala-freepik-simple.svg' %}"/>
         </a>
-      </div>
+      </div> -->
       <!-- <div id = "b3-2" class="w-50 h-img"> img </div> -->
     </div>
 <!--
