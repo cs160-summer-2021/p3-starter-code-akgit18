@@ -10,7 +10,7 @@ def new_interaction(request):
 def homepage(request):
     context_dict = {}
     files = os.listdir(os.path.join("coloring/static/", "coloring/images"))
-    context_dict['files'] = ['coloring/images/'+x for x in  files[1:]]
+    context_dict['files'] = ['coloring/images/'+x for x in  files[0:]]
     return render(request, 'coloring/homepage.html', context=context_dict)
 
 def settings(request):
