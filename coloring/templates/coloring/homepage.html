@@ -81,7 +81,7 @@
     <div class = "row">
 
       {% for file in files %}
-          <div class="w-50 h-img p-3 b2">
+          <div class="w-50 h-img p-3 b2" id="{% static file %}">
             <a href="{% url 'new_interaction' %}">
               <img src="{% static file %}" alt="">
             </a>
