@@ -155,6 +155,18 @@
 				}
 			}
 
+			$("#color-input").change(function (e) {
+				var inpcolor = document.getElementById("color-input").value;
+				var $swatch = $("<div>").css("background-color", inpcolor)
+									 .addClass("swatch");
+				$swatch.click(function(){
+					// add color to the color palette history
+						cp.history.push($(this).css("background-color"));
+				});
+				cp.$container.append($swatch);
+				cp.history.push(inpcolor);
+			});
+
 			// loads a set of colors from a json to create a color palette
 			function getColorsCreatePalette(){
 				cp.$container.html(" ");
@@ -256,7 +268,11 @@
 				</div>
 				<div class="modal-body">
 					<div id="color-palette"></div>
-					<input type="color" id="color-input">
+					<span>
+						<p class="float-left">Custom: </p>
+						&nbsp;
+						<input type="color" id="color-input" class="float-center" style="overflow-y: scroll">
+					</span>
 				</div>
 			</div>
 		</div>
