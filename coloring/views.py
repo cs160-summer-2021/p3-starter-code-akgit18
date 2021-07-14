@@ -18,3 +18,18 @@ def settings(request):
 
 def help(request):
     return render(request, 'coloring/help.html')
+
+def clown(request):
+    return render(request, 'coloring/clown.html')
+
+def flower(request):
+    return render(request, 'coloring/flower.html')
+
+def simple(request):
+    return render(request, 'coloring/simple.html')
+
+def triangles(request):
+    return render(request, 'coloring/triangles.html')
+
+def butterfly(request):
+    return render(request, 'coloring/butterfly.html')
