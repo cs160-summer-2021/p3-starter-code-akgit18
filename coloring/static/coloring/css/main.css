@@ -29,13 +29,3 @@ img {
      margin-left: 0%;
   }
 }
-
-/* animation doesnt work on mobile for some reason */
-@keyframes slideright {
-  from {
-    margin-right: 400%;
-  }
-  to {
-     margin-right: 0%;
-  }
-}

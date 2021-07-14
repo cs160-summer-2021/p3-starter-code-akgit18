@@ -35,9 +35,18 @@
     }
 
     /* animation doesn't work on mobile restriction for some reason */
+    @keyframes slideright {
+      from {
+        margin-left: -100%;
+      }
+      to {
+         margin-left: 0%;
+      }
+    }
+
     .container-fluid {
       animation-name: slideright;
-      animation-duration: 0.3s;
+      animation-duration: 0.4s;
     }
   </style>
 </head>
