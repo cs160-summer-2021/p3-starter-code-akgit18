@@ -225,7 +225,7 @@
 				}
 
 			$('#export-button').click(function() {
-				alert('This function is in beta. You will have to open the SVG in a text editor, then search for and delete the string: id="ëÎÓÈ_2" .')
+				// alert('This function is in beta. You will have to open the SVG in a text editor, then search for and delete the string: id="ëÎÓÈ_2" .')
 				var svg = paper.project.exportSVG({ asString: true });
 				downloadDataUri({
 					data: 'data:image/svg+xml;base64,' + btoa(svg),
